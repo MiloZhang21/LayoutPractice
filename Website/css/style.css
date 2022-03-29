@@ -1,0 +1,246 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+/******************************************
+/* Navigation Bar
+/*******************************************/
+
+.navBar {
+  overflow: hidden;
+  background-color: transparent;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+}
+
+.navBar a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+.navBar a:hover {
+  background: rgb(252, 252, 252);
+  color:black;
+}
+
+/**************
+/# Body
+/**************/
+html {
+  font-family: "didot";
+}
+
+.section { 
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+/****************
+/# Random Stuff
+/****************/
+.border{
+  color: white;
+  letter-spacing: 10px;
+}
+h1{
+  background: url('https://www.sadanduseless.com/wp-content/uploads/2019/01/art-selfies1.jpg');
+  background-size: cover;
+  word-spacing: 300px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 40px;
+  box-shadow: 0 0 0 3em white,
+              0 0 0 5em black;
+            
+ width: 300px;
+ height: 50px;
+ outline: 10px solid black;
+ margin: 8%;
+ padding: 25%;
+}
+h1::before{
+  position: absolute;
+  
+}
+.border{
+  border-style: solid black;
+  outline: 10px solid black;
+  box-shadow: 0 0 0 1em black;
+  border-left: 15px solid#000;
+  border-bottom: 15px solid black;
+  border-right: 15px solid black;
+           
+}
+.mona{
+  position: absolute;
+}
+img {
+  position: absolute;
+  z-index: 1;
+  left: 30px;
+  top: 20px;
+}
+
+/***************
+/# Work In Progress
+/***************/
+
+.static {
+  background: black;
+  letter-spacing: 15px;
+}
+
+h2{
+  position: relative;
+  margin-right: 100px;
+  margin-bottom: 400px;
+}
+.transparentOne{
+  color: transparent;
+}
+.transparentOne:hover{
+  background: white transparent;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/640px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg');
+  background-size: 200%;
+  
+}
+.transparentTwo{
+  color: transparent;
+}
+.transparentTwo:hover{
+  background: white;
+  background-image: url('https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/i31f41beba573734f/version/1500387364/unmissable-paintings-in-europe-the-scream-by-edvard-munch.jpg');
+  background-size: contain
+}
+.firstPic:hover{
+  background: white;
+  background-image: url('https://www.gustav-klimt.com/images/paintings/The-Kiss.jpg');
+  background-size: 100%;
+}
+.smallOne:hover{
+  background: rgb(255, 255, 255);
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1200px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg');
+  background-size: 100%;
+}
+h3{
+  margin-right: 400px;
+}
+.smallTwo:hover{
+  background: white;
+  background-image: url('https://media.timeout.com/images/103166739/image.jpg');
+  background-size: 50%;
+}
+h4{
+  margin-top: 200px;
+}
+  
+body {
+  margin: 0;
+}
+/******************
+/# Even more stuff
+/******************/
+.gif{
+  background: url('https://i.gifer.com/O40E.gif');
+  background-size: cover;
+  color: white;
+}
+
+
+/**************
+/# Title
+/**************/
+div {
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: max-content max-content;
+}
+#titleOne {
+  font-size: 100px;
+  margin: 0;
+  writing-mode:sideways-rl;
+  text-align: center;
+  line-height: .40;
+
+}
+#titleTwo{
+  font-size: 100px;
+  transform: (70deg);
+  
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+ 
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (min-width: 375px) and (max-width: 500px){
+ div{
+    overflow-x: hidden;
+    border: hidden;
+  }
+  .container{
+    overflow-x: hidden;
+  }
+  #titleOne, #titleTwo{
+    font-size: 50px;
+  }
+  h1{
+    overflow-wrap: normal;
+  }
+  .border{
+    border:hidden;
+  }
+  .mobile{
+    font-size: transparent;
+    color: #000; 
+  }
+  .gif{
+    background-size: 50%;
+    overflow-x:scroll
+  }
+  .section{
+    color: white;
+    background: url('https://upload-assets.vice.com/files/2015/07/17/1437174473SowaBrokenPaw_0000.gif?crop=1xw:0.555379746835443xh;center,center');
+    background-color: transparent;
+  }
+ 
+  
+}
